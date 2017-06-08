@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YOUR VISUALIZATION TITLE HERE</title>
+    <title>International tourist arrivals Americas vs Asia Pacific</title>
 
     <!--bootstrap for styling-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>    
     <div class="container"> <!-- content -->
-        <h1>YOUR VISUALIZATION TITLE HERE</h1>
-        <p class="lead">By YOUR NAMES HERE</p>
+        <h3><b>International tourist arrivals Americas vs Asia Pacific</b></h3>
+        <p class="lead">By Su Wang</p>
 
         <!-- more html content can go here; e.g., any data explanation -->
 
@@ -20,11 +21,18 @@
 
         <!-- more html content can go here, e.g., further details -->
 
-        <p id="citation">Data from ...</p>
+        <p id="citation">Data from https://ourworldindata.org/tourism/</p>
+        <p>Please choose the data to be displayed:</p>
+        <select id = "opts">
+            <option value ="americas">Americas</option>
+            <option value ="asia_pacific">Asia Pacific</option>
+            <option value ="compare">Americas vs Asia Pacific</option>
+        </select>
     </div>
 
     <!-- JavaScript modules -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="visualization.js"></script>
+
 </body>
 </html>
